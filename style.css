@@ -1,0 +1,27 @@
+.navbar {
+    box-shadow: 0 4px 15px rgba(31, 120, 140, 0.25);
+}
+
+.nav-link {
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #3C9BA6 !important;
+    transform: translateX(5px);
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+}
+
+.offcanvas {
+    border-left: 3px solid #3C9BA6;
+}
+#Inicio {
+    background-image: url('img/fundo.jpg'); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;  
+}
