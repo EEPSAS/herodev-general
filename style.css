@@ -1,27 +1,50 @@
-.navbar {
-    box-shadow: 0 4px 15px rgba(31, 120, 140, 0.25);
+/* HERO SECTION (HOME) */
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(13, 13, 13, 1)), url('img/fundo.jpg') no-repeat center center/cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
-.nav-link {
-    transition: 0.3s;
-    font-weight: 500;
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.nav-link:hover {
-    color: #3C9BA6 !important;
-    transform: translateX(5px);
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
 }
 
-.navbar-brand {
-    letter-spacing: 2px;
+.hero-content p {
+    font-size: 1.25rem;
+    color: #aaaaaa;
+    margin-bottom: 40px;
+    font-weight: 300;
 }
+    .navbar .nav-link {
+        color: #1F788C !important;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+        padding: 8px 12px;
+    }
 
-.offcanvas {
-    border-left: 3px solid #3C9BA6;
-}
-#Inicio {
-    background-image: url('img/fundo.jpg'); 
-    background-size: cover;       
-    background-position: center;  
-    background-repeat: no-repeat;  
-}
+    .navbar .nav-link:hover {
+        background-color: #9fb7b0;
+        color: #ffffff !important;
+    }
+
+    .navbar-brand {
+        transition: all 0.3s ease;
+        border-radius: 8px;
+        padding: 5px 10px;
+    }
+
+    .navbar-brand:hover {
+        background-color: #9fb7b0;
+        color: #ffffff !important;
+    }
