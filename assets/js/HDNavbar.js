@@ -4,47 +4,62 @@ export class HDNavBar extends HTMLElement{
     }
     connectedCallback(){
         this.innerHTML = ` 
-        <section id="navbar">
-            <nav class="navbar sticky-top" style="background-color: #1F788C;">
-                <div class="container-fluid">
-                    <a class="navbar-brand fw-bold" style="color: #DEE3DE;" href="#">
-                        HeroDev
+         <nav class="navbar position-fixed top-0 start-0 h-100 p-3"
+        style="
+            width: 280px;
+            background: #103c46;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            box-shadow:
+                8px 0 20px rgba(0, 0, 0, 0.20),
+                15px 0 50px rgba(0, 0, 0, 0.12);
+            border-right: 1px solid hwb(0 100% 0% / 0.25);
+            z-index: 1000;
+        ">
+
+        <div class="container-fluid d-flex flex-column h-100">
+
+            <a href="#"
+                class="navbar-brand text-white fw-bold fs-3 text-center w-100 mb-4">
+                HeroDev
+            </a>
+
+            <ul class="nav nav-pills flex-column w-100">
+
+                <li class="nav-item mb-2">
+                    <a href="#Inicio"
+                        class="nav-link text-white fw-semibold rounded-3"
+                        style="
+                            background-color: #9fb7b0;
+                            transition: 0.3s;
+                        ">
+                        Home
                     </a>
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" style="background-color: #DEE3DE;" tabindex="-1"
-                        id="offcanvasNavbar">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" style="color: #1F788C;">
-                                Menu
-                            </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
-                            </button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" style="color: #1F788C;" href="index.html">
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" style="color: #1F788C;" href="sobrenos.html">
-                                        Sobre nós
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" style="color: #1F788C;" href="midia.html">
-                                        Redes Sociais
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </section>`
+                </li>
+
+                <li class="nav-item mb-2">
+                    <a href="sobrenos.html"
+                        class="nav-link text-white fw-semibold rounded-3">
+                        Sobre Nós
+                    </a>
+                </li>
+
+                <li class="nav-item mb-2">
+                    <a href="midia.html"
+                        class="nav-link text-white fw-semibold rounded-3">
+                        Entre em Contato
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="mt-auto text-center">
+                <small class="text-white opacity-75">
+                    Desenvolvido por HeroDev
+                </small>
+            </div>
+
+        </div>
+    </nav>`
     }
 }
