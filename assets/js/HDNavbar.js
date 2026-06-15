@@ -27,7 +27,7 @@ export class HDNavBar extends HTMLElement{
             <ul class="nav nav-pills flex-column w-100">
 
                 <li class="nav-item mb-2">
-                    <a href="#Inicio"
+                    <a href="index.html"
                         class="nav-link text-white fw-semibold rounded-3"
                         style="
                             background-color: #9fb7b0;
