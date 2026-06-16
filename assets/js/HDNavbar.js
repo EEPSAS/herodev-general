@@ -30,8 +30,7 @@ export class HDNavBar extends HTMLElement{
                     <a href="index.html"
                         class="nav-link text-white fw-semibold rounded-3"
                         style="
-                            background-color: #9fb7b0;
-                            transition: 0.3s;
+                           
                         ">
                         Home
                     </a>
